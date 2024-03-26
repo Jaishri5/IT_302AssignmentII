@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Clock</title></head>
+    <body>
+        <h1>CURRENT TIME</h1>
+        <div id="digiclock"></div>
+        <script>
+            digiclock=document.getElementById("digiclock")
+            function displayTime()
+            {
+                dt=new Date();
+                hh=dt.getHours();
+                mm=dt.getMinutes();
+                ss=dt.getSeconds();
+                time=hh+":"+mm+":"+ss;
+                digiclock.innerHTML=time;
+            }
+            setInterval(displayTime,1000);
+
+        </script>
+    </body>
+</html>

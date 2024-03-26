@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+        <style>
+            .black{
+                background-color: black;
+                color:white
+            }
+            .red{
+                background-color: red;
+                color:white
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TABLE</h1>
+        <table spacing="2" padding="6" width="600px" height="600px">
+            <script>
+                r=parseInt(prompt("Enter the number of rows:")) ;
+                c=parseInt(prompt("Enter the number of columns:")) ;
+                arr=['black','red']
+                for(i=0;i<r;i++)
+                {
+                    document.write("<tr>");
+              
+                    for(j=0;j<c;j++)
+                    {
+                        if((i+j)%2==0)
+                        {
+                            document.write("<td class='black'>"+i+j+"</td>");
+                        }
+                        else
+                        {
+                            document.write("<td class='red'>"+i+j+"</td>");
+                        }
+                       
+                        // document.td.style.backgroundColor=arr[i%2];
+                        
+                    }
+                    
+                    document.write("</tr>");
+                }
+
+            </script>
+        </table>
+    </body>
+</html>

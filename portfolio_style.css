@@ -1,0 +1,313 @@
+body{
+    background-color: #F1F1F2;
+}
+#menu:hover a{
+    text-decoration: underline;
+}                  
+.topbar{                
+    background-color: rgba(69, 71, 84, 0.6);             
+    position: sticky;
+    top:0px;
+    left:0px;           
+    width: 100%;               
+    z-index: 10;
+    display: flex;                
+    height:80;               
+    justify-content: space-evenly;               
+}
+.mainheading{
+    font-size:78px;
+    font-family:'Elephant';
+    text-align:center;
+}
+.topbar div{
+    float:left;
+    margin:25px;
+    font-weight: 800;
+    font-size: 36px;
+}
+.welcome{                
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-evenly;              
+    height:auto;
+    width:100%;
+    z-index: 5;
+    background-color: #B1A6A4;
+}
+.prfpic{
+    float:left;                
+    width:595px; 
+
+}         
+.greeting{
+    font-family: 'Elephant';
+    font-size: 54px;
+    font-weight: 700;
+    text-align: center;
+  
+    margin:5px;
+}
+.heading{
+    font-family:'Cascadia Code';
+    font-size: 54px;
+    font-weight: 700;
+    background-color: #B1A6A4;
+    margin:5px;
+    border-radius: 28px;
+    text-align:left;
+}
+.intro,.persinfo{
+    font-family:'Cascadia Code';
+    font-size: 32px;
+    font-weight: 700;
+    margin:5px;
+
+}
+.heading dd,dt,.heading1 dd,dt{
+    font-family:'Cascadia Code';
+    font-size: 32px;
+    font-weight: 700;
+}
+.aboutme,.portfolio,.contactme{               
+    display: flex;                 
+    align-content: space-evenly;
+    justify-content: space-evenly;              
+    height:auto;               
+    z-index: 5;
+}
+hr{
+    border-top: 5px dotted #413F3D;                
+}
+a{
+    text-decoration: none;
+    color: white;               
+}
+.imgs{
+    width: 350px;
+    height: 350px;
+    margin:10px;
+}
+.label{              
+    font-family: 'Elephant';               
+    width:545px;
+    height:545px;
+    background-color: #413F3D;
+}
+.label div{               
+    position: relative;
+    width: auto;
+    height: auto;
+    font-family: 'Elephant';
+    font-size: 76px;
+    color: white;
+}
+.info{
+    font-family:'Cascadia Code';
+    font-size: 65px;
+    font-weight: 700;
+    width: 1050px;
+    margin:5px;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.formtable{
+    font-family:'Cascadia Code';
+    font-size: 28px;
+    font-weight: 700;               
+}
+.heading dl,.heading ul{
+    display: none;
+}
+
+.heading:hover{                
+    color: white;
+}
+.heading:hover dl,.heading:hover ul{
+   color: black;
+   display:block;
+   list-style-type: square;
+}
+.button {           
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    width: 350px;
+    font-size: 26px;
+    margin: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 ;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type=text], input[type=email], input[type=tel], input[type=password],textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #58b4cd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 0.6em;
+    display:block;
+    width:100%;
+    text-align:right;
+    height:1.2em;
+}
+.required::before {
+    content: "*";
+    color: red;
+    margin-right: 3px;
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #413F3D;
+}
+
+.button5:hover {
+background-color: #413F3D;
+color: white;
+}
+.container{
+    width:auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    height:auto;
+    flex-direction: row;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.container div{
+    
+    display: flex;
+   
+
+    flex-direction: row;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+}
+.d1{
+    position: relative;
+    float: left;
+    margin:10px;
+    
+}
+.d1 a{
+    text-decoration: none;
+    color: #000;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    /* vertical-align: middle;  */
+}
+
+.cards {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+/* margin: 0;
+padding: 0; */
+}
+
+.cards_item {
+display: flex;
+padding: 1rem;
+min-width: 14rem;
+width: 15%;     
+
+}
+
+.card {
+background-color: white;
+border-radius: 0.25rem;
+box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+/* display: flex; */
+/* flex-direction: column;  */
+
+
+}
+
+.card_content {
+display: flex;
+
+flex-direction: column;
+padding: 1rem;
+}
+
+.card_image {
+/* background-position: center center; */
+background-repeat: no-repeat;
+background-size: cover;
+border-top-left-radius: 2 px;
+border-top-right-radius: 2 px;
+
+
+
+        }
+
+
+
+.card_title {
+/* color: @gray-dark; */
+font-size: 1.25rem;
+font-weight: 300;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.card_date{
+font-size: 1.1rem;
+font-weight: 300;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.card_text {
+
+font-size: 0.875rem;
+line-height: 1.5;
+margin-bottom: 1.25rem;
+}
+
+
+
+.btn {
+background-color: white;
+
+border-radius: 1rem;
+
+padding: 0.5rem;
+text-transform: lowercase;
+display: block;
+width: 95%;
+}

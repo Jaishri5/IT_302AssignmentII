@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E23</title>
+    </head>
+    <body>
+        <div id="txt" style ="font-size: 5pt" >TEXT GROWING</div>
+        <script>
+            fsize=parseInt(txt.style.fontSize)
+
+            function incText()
+            {
+                fsize=fsize+1
+                txt.innerHTML="TEXT-GROWING"
+                txt.style.color="red";
+                txt.style.fontSize=fsize+"pt"
+                if(fsize==50)
+                {
+                    clearInterval(n1)
+                    n2=setInterval(decText,100)
+                }
+            }
+            function decText()
+            {
+                fsize=fsize-1
+                txt.innerHTML="TEXT-SHRINKING"
+                txt.style.color="blue";
+                txt.style.fontSize=fsize+"pt"
+                if(fsize==5)
+                {n1=setInterval(incText,100)
+                    clearInterval(n2)
+                    
+                }                 
+            }                        
+            n1=setInterval(incText,100)
+        </script>
+    </body>
+</html>

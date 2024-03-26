@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <!-- 11.	Create a user feedback page which asks questions about a software product.
+         You are required to use checkbox, radio buttons,
+         and drop-down, textarea and various text input type for this. Structure the web page using HTML table. -->
+
+         <form action="JP02_01L5E11.html" method="get">
+                <fieldset> 
+                    <legend>Your Information</legend>
+                    <table width="800px">
+                        <tr>
+                            <td width="50%"><label for="name">Name</label></td>
+                            <td><input type="text" name="name" placeholder="Enter name" size="20" minlength="4" maxlength="10" required/></td>
+                        </tr>
+                        <tr>
+                            <td width="50%"><label for="age">Age</label></td>
+                            <td><input type="number" name="age" min="4" max="120"/><br></td>
+                        </tr>
+                    </table>   
+                    
+                    
+                    
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>About the product</legend>
+                    <table width="800px">
+                        <tr>
+                            <td width="50%"><label for="pr">Enter the name of the product</label></td>
+                            <td><select name="pr" id="pr1">
+                                <option value="Browser">Browser</option>
+                                <option value="App">App</option>
+                                <option value="Database">Database</option>
+                                <option value="Operating System">Operating System</option>
+
+                                
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td width="50%">
+                                <label for="br">Enter the brand</label>
+                            </td>
+                                    <td>
+                                        <input type="text" name="br" list="brand" >
+                        <datalist id="brand">
+                            <option value="Adobe">Adobe</option>
+                            <option value="Microsoft">Microsoft</option>
+                            <option value="Google">Google</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Oracle">Oracle</option>
+                            <option value="IBM">IBM</option>
+                            <option value="Amazon">Amazon</option>
+                        </datalist>
+
+                            
+                        </td>
+                        </tr>
+                        <tr>
+                            <td width="50%"><label for="use">For how long have you been using it?</label></td>
+                            <td><input type="radio" name="use" value="lessthan2">&lt;2 years
+                <input type="radio" name="use" value="morethan2">&gt;2 years</td>
+                        </tr>
+                        <tr>
+                            <td width="50%"><label for="why">Why do you use this product?</label></td>
+                            <td><input type="checkbox" name="why" value="price" >price
+                                <input type="checkbox" name="why" value="quality">quality
+                                <input type="checkbox" name="why" value="brand">brand
+                            </td>
+                        </tr>
+                    </table>                    
+                </fieldset>
+              
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <table width="800px">
+                        <tr>
+                            <td width="50%"><label for="fb">Enter the feedback</label></td>
+                            <td><textarea name="fb"  cols="30" rows="10" placeholder="FEEDBACK"></textarea></td>
+                        </tr>
+                    </table>
+                    
+                    
+                    
+                
+
+                </fieldset>
+                <input type="submit" value="SUBMIT">
+                <input type="reset" value="RESET">
+                
+            
+
+
+            </form>
+    </body>
+</html>

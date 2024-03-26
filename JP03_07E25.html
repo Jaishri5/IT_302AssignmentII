@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JP03_07Temperature</title>
+    </head>
+    <body>
+        <form>
+            <input type="number" name="inputV" onchange="tempconv()">
+            <select name="inputOp" onchange="tempconv()">
+                <option value="C">Celcius</option>
+                <option value="K">Kelvin</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+            <input type="number" name="outputV" onchange="tempconv2()">
+            <select name="outputOp" onchange="tempconv()">
+                <option value="C">Celcius</option>
+                <option value="K">Kelvin</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+
+        </form>
+        <script>
+            function tempconv()
+            {
+                inputV=parseFloat(document.forms[0].elements['inputV'].value)
+                inputOp=document.forms[0].elements['inputOp'].value
+                outputOp=document.forms[0].elements['outputOp'].value
+                outputV=parseFloat(document.forms[0].elements['outputV'].value)
+                if(inputOp=='C' && outputOp=='K')
+                {
+                    resultO=inputV+273.15;
+                    resultI=outputV-273.15;
+                }
+                else if(inputOp=='K' && outputOp=='C')
+                {
+                    resultO=inputV-273.15;
+                    resultI=outputV+273.15;
+                }
+                else if(inputOp=='C' && outputOp=='F')
+                {
+                    resultO=(inputV*9/5)+32
+                    resultI=(outputV-32)*5/9
+                }
+                else if(inputOp=='F' && outputOp=='C')
+                {
+                    resultO=(inputV-32)*5/9
+                    resultI=(outputV*9/5)+32
+                }
+                else if(inputOp=='F' && outputOp=='K')
+                {
+                    temp=(inputV-32)*5/9
+                    resultO=temp+273.15;
+
+                    temp=outputV-273.15;
+                    resultI=(temp*9/5)+32
+                    
+                }
+                else if(inputOp=='K' && outputOp=='F')
+                {
+                    temp=inputV-273.15;
+                    resultO=(temp*9/5)+32
+
+                    temp=(outputV-32)*5/9
+                    resultI=temp+273.15;
+
+                }
+                else{
+                    resultO=inputV
+                    resultI=outputV
+                }
+                document.forms[0].elements['outputV'].value=resultO
+             
+            }
+            function tempconv2()
+            {
+                inputV=document.forms[0].elements['inputV'].value
+                inputOp=document.forms[0].elements['inputOp'].value
+                outputOp=document.forms[0].elements['outputOp'].value
+                outputV=parseFloat(document.forms[0].elements['outputV'].value)
+                if(inputOp=='C' && outputOp=='K')
+                {
+                    
+                    resultI=outputV-273.15;
+                }
+                else if(inputOp=='K' && outputOp=='C')
+                {
+                    
+                    resultI=outputV+273.15;
+                }
+                else if(inputOp=='C' && outputOp=='F')
+                {
+                    
+                    resultI=(outputV-32)*5/9
+                }
+                else if(inputOp=='F' && outputOp=='C')
+                {
+                   
+                    resultI=(outputV*9/5)+32
+                }
+                else if(inputOp=='F' && outputOp=='K')
+                {
+                   
+                    temp=outputV-273.15;
+                    resultI=(temp*9/5)+32
+                    
+                }
+                else if(inputOp=='K' && outputOp=='F')
+                {
+                  
+                    temp=(outputV-32)*5/9
+                    resultI=temp+273.15;
+
+                }
+                else{
+                  
+                    resultI=outputV
+                }
+                document.forms[0].elements['inputV'].value=resultI
+             
+            }
+        </script>
+    </body>
+</html>

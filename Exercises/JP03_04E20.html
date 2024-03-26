@@ -1,0 +1,40 @@
+<!-- 20.Create a Webpage with two buttons start and stop. 
+    When user click on start button a timer should start to count seconds.
+     When a user click on stop button then it should stop. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E20</title>
+
+    </head>
+    <body>
+        <button onclick="startTimer()">START</button>
+        <button onclick="stopTimer()">STOP</button>
+        
+        <div id="display"></div>
+        <script>
+            count=0;
+            display=document.getElementById("display");
+            // arr=["pink","lavender","#ABCDEF","green","cyan"];
+            
+            function countSeconds()
+            {
+                count++;
+                display.innerHTML=count;              
+                // document.body.style.backgroundColor=arr[count%5];                          
+            }
+            
+            function startTimer()
+            {
+                n1=setInterval(countSeconds,1000);
+            }
+            function stopTimer()
+            {
+                clearInterval(n1);
+            }
+
+            
+          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!--6.Create a webpage for a book chapter in which all the topic are displayed using ordered list.
+ When user clicks on any topic it should be redirected to corresponding 
+ paragraph within same page.-->
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>JP01_15L3E6</title>
+    </head>
+    <body>
+        <!-- <font face="Bernard MT Condensed" > -->
+            <hr>
+           <u><h1>Data Communications and Networks</h1></u> 
+            <h2>Contents</h2>
+            <ol>
+                <li>
+                    <a href="#ch1">Introduction to DCN</a></li>
+                <li><a href="#ch2">Network Models</a></li>
+                <li><a href="#ch3">Physical Layer and DataLink layer</a></li>
+                
+                <li><a href="#ch4">Internet Layer</a></li>
+                <li><a href="#ch5">Transport Layer</a></li>
+                <li><a href="#ch6">Application Layer</a></li>
+            </ol>
+            <!-- </font> -->
+            <h3><a name="ch1">Introduction to DCN</a></h3>
+            <p>The word data refers to information.<br>Data communication: The exchange of data between two
+                parties via some form of transmission medium.</p>
+            <h3><a name="ch2">Network Models</a></h3>
+                <ul>
+                    <li>OSI Model has 7 layers and given by ISO
+                        
+                    </li>
+                    <li>TCP/IP Model has 5 layers
+                        
+                            
+                    </li>
+                </ul>
+            <h3><a name="ch3">Physical Layer and DataLink layer</a></h3>
+            <ul>
+                <li>Physical layer uses data in form of bits.</li>
+                <li>Data link layer uses data in form of frames.It uses physical address</li>
+              
+            </ul>
+            <h3><a name="ch4">Internet Layer</a></h3>
+            <ul>
+                <li>Internet layer uses data in form of datagram.</li>
+                <li>It uses IP protocol</li>
+                <li>It uses logical or IP address</li>
+            </ul>
+            <h3><a name="ch5">Transport Layer</a></h3>
+            <ul><li>Internet layer uses data in form of segments/datagram/packets.</li>
+            <li>It uses TCP/UDP/SCTP protocol</li>
+            <li>It uses port address</li></ul>
+            
+            <h3><a name="ch6">Application Layer</a></h3>
+            <ul><li>Application layer uses data in form of messages.</li>
+                <li>It uses protocol depending on the service used</li>
+                <li>It has services like Email, File Transfer, DNS etc</li>
+            </ul>
+    </body>
+</html>

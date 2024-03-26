@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naviagation Bar</title>
+        <style>
+            
+            nav{
+                background-image: url('images/.jpeg');
+                background-size: cover;
+                margin:0;
+                padding:0;
+                position:fixed;
+                top:0;
+                left:0;
+            }
+            nav ul{
+                border: 1px solid black;
+                margin:0;
+                padding:0;
+                list-style-type: none;
+                
+            }
+            nav ul li{
+                border-right:1px red solid;
+                float: left;
+               
+            }
+            nav ul li a{
+                text-decoration: none;
+                display:block;
+                background: black;
+                color:antiquewhite;
+                font-size: 40px;
+                font-weight:800;
+                text-align: center;
+                width:450px;
+            }
+            nav ul li:last-child{
+                border-bottom:none;
+
+            }
+            nav  ul li a:hover{
+                color: cadetblue;
+                background-color: gainsboro;
+            }
+           
+            li ul{
+                display: none;
+                position:absolute;
+                top: 50px;
+            }
+            li:hover ul{
+                display:block;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a>
+                <ul>
+                    <li>
+                        <a href="#">Mission</a>
+                    </li>
+                    <li>
+                        <a href="#">Vision</a>
+                    </li>
+                    <li>
+                        <a href="#">History</a>
+                    </li>
+                </ul></li>
+                <li><a href="#">Contact Us</a>
+                    <ul>
+                        <li>
+                            <a href="#">Mission</a>
+                        </li>
+                        <li>
+                            <a href="#">Vision</a>
+                        </li>
+                        <li>
+                            <a href="#">History</a>
+                        </li>
+                    </ul></li>
+            </ul>
+        </nav>
+
+        
+    </body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    
+    background-image:linear-gradient(rgba(120,255,255,0.9),rgba(255,180,255,0.9)),url('images/24.jpeg') ;
+    background-size: auto;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+    font-weight:700px;
+    color: #000080;
+}
+h2{
+    font-size:30px;
+    font-weight:700px;
+    color: #400000;
+}
+p{
+    font-size:15px;
+    color: #003000;
+    line-height: 30px;
+    font-weight: 600px;
+
+
+}
+span{
+    background-color: #ff7f50;
+}

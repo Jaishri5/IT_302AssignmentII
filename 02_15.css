@@ -1,0 +1,17 @@
+div{
+    height: 200px;
+    width: 200px;
+    border-style: dashed;
+    color: brown;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+}
+.outer{
+    height: auto;
+    width: auto;
+}
+q{
+    font-size: 32px;
+    color:white
+}

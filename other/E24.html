@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- 24.Create a web page to display events in card layout. An event should
+   have image, title, date and description fields. Store all these values in Javascript
+   array or object for multiple events and generate dynamic cards for each events on webpage. -->
+<html>
+    <head>
+        <title>E24</title>
+        <style>
+body {
+  /* color: @gray; */
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+  font-weight: 400;
+ 
+  padding: 10px;
+
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  /* vertical-align: middle;  */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+  min-width: 35rem;
+  width: 33%;
+ 
+  /* @media(min-width: 56rem) {
+    width: 33.3333%;
+  } */
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  /* display: flex; */
+ /* flex-direction: column;  */
+ 
+  
+}
+
+.card_content {
+  display: flex;
+
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card_image {
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 2 px;
+  border-top-right-radius: 2 px;
+
+
+
+}
+
+
+
+.card_title {
+  /* color: @gray-dark; */
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card_date{
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card_text {
+ 
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <h1>EVENTS</h1>
+        <ul class="cards">
+            <script>
+              let events = [
+                {
+                  "image": "images/28.jpeg",
+                  "title" : "Mayukh",
+                  "date": '2024-03-22',
+                  "description": "Mayukh is an annual technical festival held at Banasthali Vidyapith that celebrates innovation and creativity by integrating science, technology, and culture"
+                  
+                },
+                {
+                  "image": "images/29.jpg",
+                  "title" : "Apaji Fest",
+                  "date": '2024-11-25',
+                  "description": "It is a fest arranged annually"
+                },
+               
+                
+              ]
+              for(i=0;i<events.length;i++)
+              {
+                document.write("<li class='cards_item'>")
+                document.write("<div class='card'>")
+                document.write("<div class='card_image'>")
+                document.write("<img src='"+events[i].image+"' alt='event1'")
+                document.write("</div>")
+                document.write("<div class='card_content'><div id='e"+(i+1)+"' class='card_title'>")
+                document.getElementById('e'+(i+1)).innerHTML=events[i].title
+                document.write("</div>")
+
+                document.write("<div id='d"+(i+1)+"' class='card_date'>")
+                  
+                document.getElementById('d'+(i+1)).innerHTML=events[i].date
+                document.write("</div>")
+                document.write("<p id='t"+(i+1)+"' class='card_text'>")
+                  
+                  document.getElementById('t'+(i+1)).innerHTML=events[i].description
+                  document.write("</p>")
+                  document.write("</div>")
+                  document.write("</div>")
+                  document.write("</li>")
+              
+
+              }
+              
+                   
+             
+            </script>
+            
+
+
+            
+    </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <!-- 1.Sea foam green #A1D6E2,
+        light blue #F1F1F2 -->
+    <head>
+        <title>Portfolio</title>
+        <link href="portfolio_style.css" rel="stylesheet" content="text/css">
+        <script src="validate.js" type="text/javascript" ></script>
+    </head>
+    <body>
+       
+        <div class="topbar">
+            <div id="menu"><a href="#homepage">Homepage</a></div>
+            <div id="menu"><a href="#about">About Me</a></div>
+            <div id="menu"><a href="#portfolio">Portfolio</a></div>
+            <div id="menu"><a href="#contactme">Contact Me</a></div>
+        </div>
+        <a name="homepage"></a>
+        <p class="mainheading">Welcome to my Portfolio!</p>
+        <div class="welcome">
+            <img src="Assignment2/Profile.jpg" alt="Profile Picture" class="prfpic">
+            <p class="container1">
+                <div class="greeting">Hello! I'm Jaishri Prasad
+                    <div class="intro">I'm an undergraduate student currently pursuing BTech in the branch of Information Technology in Banasthali Vidyapith.</div>
+                </div>               
+            </p>            
+        </div>
+        <hr>
+        <a name="about"></a>
+        <p class="mainheading" style="text-align: left;">About Me</p>
+        <div class="aboutme">
+          
+            <div class="label" style="float: left;">
+                <div class="heading1">
+                    <dl style="display: block;">
+                        <dt class="persinfo">
+                            NAME</dt>
+                        <dd>Jaishri Prasad</dd>
+                        <dt class="persinfo">CLASS</dt>
+                            <dd>BTech IT Section A</dd>
+                        <dt class="persinfo">ROLL NUMBER</dt>
+                            <dd>2116772</dd>
+                        <dt class="persinfo">EMAIL</dt>
+                            <dd>jaishriprasad5@gmail.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="info">
+                <div class="heading">
+                    <p style="text-align: center;height: 85px;">Educational History</p>
+                    <dl>
+                        <dt class="persinfo">
+                            High School:July 2021</dt>
+                        <dd>The Shri Ram School Aravali, Gurugram</dd>
+                        <dt class="persinfo">July 2021- May 2025</dt>
+                        <dd>BTech : Banasthali Vidyapith</dd>
+                    </dl>
+                </div>
+                    
+                <div class="heading">
+                    <p style="text-align: center;height: 85px;">Technical Skills</p>
+                    <ul>
+                        <li class="persinfo">C</li>
+                        <li class="persinfo">C++</li>
+                        <li class="persinfo">Java</li>
+                        <li class="persinfo">Python</li>
+                        <li class="persinfo">HTML</li>
+                        <li class="persinfo">CSS</li>
+                        <li class="persinfo">JavaScript</li>
+                        <li class="persinfo">MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="heading">
+                    <p style="text-align: center;height: 85px;">Interests</p>
+                    <ul>
+                        <li class="persinfo">Journaling</li>
+                        <li class="persinfo">Reading</li>
+                        <li class="persinfo">Learning languages</li>
+                    </dl>                        
+                </div>
+            </div>    
+        </div>
+        <hr>
+
+        <a name="portfolio"></a>
+        <p class="mainheading" style="text-align: right;">Portfolio</p>
+        <div class="portfolio">
+            <div class="info" id="main">
+                <div class="heading" id="iwt" onclick="loadMore()" style="float: right;">
+                    <p style="text-align: center;height: 85px;">IT302LAB</p>
+                    <p class="persinfo"><img src="Assignment2/image1.jpg" alt="IT302LAB" class="imgs" style="float: left;">This contains all the exercises done in the lab from exercise 1 till 26</p>
+                        
+                </div>
+
+                <div class="heading" id="assignent1" onclick="loadAssignment()" style="float: right;">
+                    <p style="text-align: center;height: 85px;">Assignments</p>
+                    <p class="persinfo">
+                        <img src="Assignment2/image2.jpg" alt="IT302LAB" class="imgs" style="float: left;">This contains the first assignment. It's a static website made mainly using HTML.
+                        It also contains the second assignment which was to make a personal portfolio.
+                            
+                    </p>
+                </div>
+                <script src="load.js" type="text/javascript"></script>
+    
+            </div>
+            <div class="info" id="iwtEx" style="display: none;"> 
+                <button id="b1" class="button button5" onclick="goBack()" >Back</button>
+                <div id="exercise">Exercises                    
+                    <button id="b1" class="button button5" style="width: fit-content;" onclick='startIdx()' >&lt;&lt;</button>
+                    <button id="b1" class="button button5" style="width: fit-content;" onclick='decIdx()' >&lt;</button>                            
+                    <script src="Ex.js" type="text/javascript"></script>
+                    <button id="b1" class="button button5" style="width: fit-content;" onclick='incIdx()' >&gt;</button>
+                    <button id="b1" class="button button5" style="width: fit-content;" onclick='lastIdx()' >&gt;&gt;</button>
+                     
+                </div>              
+                        
+            </div>
+           
+            <div class="info" id="iwtAssign" style="display: none;"> 
+                <button id="b1"  class="button button5" onclick="goBack()" >Back</button>
+                <div class="heading" id="exercise">Assignments
+                    <div class='container'>
+                        
+                        <script src="Assignment.js" type="text/javascript"></script>
+                    </div>
+                </div>              
+            </div>            
+        </div>       
+        <hr>
+        <a name="contactme"></a>
+        <p class="mainheading" style="text-align: left;">Contact me</p>
+        <div class="contactme">            
+            <div class="label" style="float: left;" ><img src="Assignment2/image3.jpg" alt="IT302LAB" class="imgs" style="float: left;height: 100%;width: 100%;"></div>  
+            
+            <div class="formtable">                
+                <form action="#" method="post" onsubmit="return validateForm()">
+                    <label for="fname" class="required">First Name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <span id="fnameError" class="error"></span>
+                
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname">
+                    <span id="lnameError" class="error"></span>
+                
+                
+                    <label for="email" class="required">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                
+                    <label for="subject" class="required">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                    <span id="subjectError" class="error"></span>
+                    <label for="mss" class="required">Message:</label><br>
+                    <textarea id="mss" name="mss"></textarea>
+                    <span id="messageError" class="error"></span>
+                
+                
+                    <input type="submit" value="Send Message">
+                </form>               
+            </div>  
+          
+        </div>    
+    </body>
+</html>
